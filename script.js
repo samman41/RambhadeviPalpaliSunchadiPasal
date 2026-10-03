@@ -1,10 +1,10 @@
 const CONFIG = {
     // Profile Details
-    name: "RAMBHADEVI PALPALI SUNCHADI PASAL",
-    title: "PRATIKSHYA SHRESTHA",
+    name: "Rambhadevi Palpali Sunchadi Pasal",
+    title: "Established in 2075 B.S",
 
     // Paths to Images (Ensure these match the actual files in your directory)
-    logoPath: "image/logo.jpg",
+    logoPath: "image/logo.png",
     backgroundPath: "image/background image.png",
 
     // Primary Action Buttons (Grid)
@@ -27,11 +27,11 @@ const CONFIG = {
 
     // Save Contact (vCard) Details for Address Book
     vcard: {
-        firstName: "Rambhadevi Palpali",
-        lastName: "Sunchadi Pasal",
+        firstName: "Aavaran",
+        lastName: "Fashion",
         phone: "+9779845434663",
         email: "[EMAIL_ADDRESS]",
-        company: "Rambhadevi Palpali Sunchadi Pasal",
+        company: "Aavaran Fashion Attire",
         website: "https://www.instagram.com/aavaranfashionattire?stkn=MW1uM3FpcGVsYjlhag%3D%3D"
     }
 };
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 const isAndroid = /Android/i.test(navigator.userAgent);
                 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-                
+
                 if (isAndroid) {
                     // Android intent with fallback
                     window.location.href = `intent://facewebmodal/f?href=${social.url}#Intent;package=com.facebook.katana;scheme=fb;S.browser_fallback_url=${encodeURIComponent(social.url)};end`;
@@ -155,14 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add socials as clickable websites and social profiles in the contact
         CONFIG.socials.forEach(s => {
             vcardDataArray.push(`URL:${s.url}`);
-            
+
             // Map social IDs to vCard types
             let socialType = s.id.toLowerCase();
             if (socialType === 'instagram' || socialType === 'tiktok' || socialType === 'facebook') {
-                 vcardDataArray.push(`X-SOCIALPROFILE;TYPE=${socialType}:${s.url}`);
+                vcardDataArray.push(`X-SOCIALPROFILE;TYPE=${socialType}:${s.url}`);
             }
         });
-        
+
         // Add other action locations/links (like Location) to the vCard
         CONFIG.actions.forEach(a => {
             if (a.url && !a.url.startsWith('tel:') && !a.url.startsWith('mailto:')) {
