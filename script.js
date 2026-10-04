@@ -9,10 +9,10 @@ const CONFIG = {
 
     // Primary Action Buttons (Grid)
     actions: [
-        { id: "call", label: "Call Now", url: "tel:+9779845434663", icon: "fas fa-phone-alt" },
-        { id: "gmail", label: "Email Us", url: "mailto:contact@aavaran.com", icon: "fas fa-envelope" },
-        { id: "location", label: "Location", url: "https://maps.app.goo.gl/UEfUks4VwjykiFGL6?g_st=ac", icon: "fas fa-map-marker-alt" },
-        { id: "review", label: "Review Us", url: "https://search.google.com/local/writereview?placeid=ChIJ2Ul-PiT7lDkRhOARRQKrJu4", icon: "fas fa-star" }
+        { id: "call", label: "Call Now", url: "tel:+9779855061670", icon: "fas fa-phone-alt" },
+        { id: "gmail", label: "Email Us", url: "mailto:[EMAIL_ADDRESS]", icon: "fas fa-envelope" },
+        { id: "location", label: "Location", url: "https://maps.app.goo.gl/HuZfwNmNAU8SxKfT8?g_st=ac", icon: "fas fa-map-marker-alt" },
+        { id: "review", label: "Review Us", url: "https://search.google.com/local/writereview?placeid=ChIJjR4liur7lDkRq5wBUQYyLEI", icon: "fas fa-star" }
     ],
 
     // Social Media Links (Small circular icons)
@@ -23,15 +23,15 @@ const CONFIG = {
     ],
 
     // Direct WhatsApp Link
-    whatsappUrl: "whatsapp://send?phone=+9779845434663",
+    whatsappUrl: "whatsapp://send?phone=+9779855061670",
 
     // Save Contact (vCard) Details for Address Book
     vcard: {
-        firstName: "Aavaran",
-        lastName: "Fashion",
-        phone: "+9779845434663",
+        firstName: "Rambhadevi",
+        lastName: "Palpali Sunchadi Pasal",
+        phone: "+9779855061670",
         email: "[EMAIL_ADDRESS]",
-        company: "Aavaran Fashion Attire",
+        company: "Rambhadevi Palpali Sunchadi Pasal",
         website: "https://www.instagram.com/aavaranfashionattire?stkn=MW1uM3FpcGVsYjlhag%3D%3D"
     }
 };
