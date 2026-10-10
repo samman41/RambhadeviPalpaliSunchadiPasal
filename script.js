@@ -32,7 +32,7 @@ const CONFIG = {
         phone: "+9779855061670",
         email: "[EMAIL_ADDRESS]",
         company: "Rambhadevi Palpali Sunchadi Pasal",
-        website: "https://www.instagram.com/aavaranfashionattire?stkn=MW1uM3FpcGVsYjlhag%3D%3D"
+        website: "https://rambhadevipalpalisunchadipasal.tappooo.workers.dev/"
     }
 };
 
